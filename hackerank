@@ -1,0 +1,13 @@
+dic={}
+n=int(input("Enter how many students :")) #2 
+
+for i in range (n):
+    name=input("Enter student name :").strip()
+
+    marks=list(map(float,input("Enter the marks : ").split()))
+    dic[name]=marks
+student_name=input("enter student name :")
+for i,j in dic.items():
+    if i==student_name:
+        average=j[0]+j[1]+j[2]//3
+print(average)
