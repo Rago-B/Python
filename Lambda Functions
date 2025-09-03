@@ -1,0 +1,46 @@
+# Basics
+# lambda arguments:expression
+add=lambda x,y:x+y
+print(f"Its a lambda function {add(3,4)}")
+
+# Equivalent to
+def add(x, y):
+    return x + y
+
+# map syntax 
+# map(function,iterable)  map iterates list,tuble,set one by one 
+l1=[1,2,3,4]
+l2=[]
+for i in l1:
+    r=i*2
+    l2.append(r)
+print(f"Without map {l2}")
+
+
+result=list(map(lambda x:x*2 ,l1))
+print(f"With Map {result}")
+
+l=["cat", "dog"] 
+r=list(map(lambda x :x.upper(),l))
+print(f"With map conver lower to UPPER {r}")
+
+# Filter 
+result=list(filter(lambda x:x%2==0 , l1 ))
+print(f"Filter using Lambda {result}")
+
+l=["apple", "banana", "avocado"]
+r=list(filter(lambda X : X[0]=="a" , l))
+print(f"Filter words that start with a {r}")
+
+# Sorting with lambda
+l=["python", "is", "great"]
+l.sort(key=lambda x : len(x))
+print(f"Sort using lambda {l}")
+
+# List comprehension
+l1=[1,2,3,4]
+result=[x*2 for x in l1]
+print(f"List comprehension {result}")
+
+
+ 
