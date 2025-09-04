@@ -1,0 +1,29 @@
+# even numbers
+r=[i**2 for i in range(1,10)]
+print(r)
+
+# syntax [ expression for i in iterable if condition ]
+r=[i for i in range(1,100) if i % 2==0]
+print(r)
+
+#Convert all strings in a list to uppercase.
+r=["apple", "banana", "cherry"]
+s=[i.upper() for i in r ]
+print(s)
+
+#Create a list of the first letters of each word in a list.
+r=["apple", "banana", "cherry"]
+s=[i[0] for i in  r]
+print(s)
+
+#Filter vowels
+r=["apple", "banana", "cherry" ,"zz"]
+# syntax - [ expression (x) for i in range () condition]
+s=[i for i in r if i=="a" or i=="e" or i=="i" or i=="o" or i=="u"]
+print(s)
+
+r = ["apple", "banana", "cherry", "zz"]
+vowels = "aeiou"
+
+s = [word for word in r if any(v in word for v in vowels)]
+print(s)
