@@ -1,0 +1,24 @@
+# list comprehension
+
+list_comprehension=[i**2 for i in range (1,16)]
+print(f"List of sqaure numbers {list_comprehension}")
+
+words=["apple", "banana", "kiwi", "mango"]
+list_comprehension=[i  for i in words if "a" in i]
+print(list_comprehension)
+
+words=["python", "java", "c", "html", "css"]
+list_comprehension=[i for i in words if len(i)==3]
+print(list_comprehension)
+
+list_comprehension=[ i for i in range (1,100) if i % 3==0 and i % 7==0]
+print(f"Divides by both 3 and 7 {list_comprehension}")
+
+nested = [[1,2],[3,4],[5,6]]
+normal=[i for j in nested for i in j]
+print(normal)
+
+text = "list comprehension is powerful"
+vowels = "aeiou"
+consonents=[ i for i in text if i not in vowels]
+print(consonents)
